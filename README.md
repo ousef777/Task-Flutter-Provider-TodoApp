@@ -1,12 +1,13 @@
 # Todo App ✅
 
-//image
+![image1](https://user-images.githubusercontent.com/84308096/160113038-312e1517-63bb-4c6a-9c4f-8d4c36032e0b.png)
 
-## Instructions
 
 ### 💡Hint:
 
 The [Checkbox](https://api.flutter.dev/flutter/material/Checkbox-class.html) widget.
+
+## Instructions
 
 1. Create a new project called: `todo_app`.
 2. Create the structure of your folders: `models`, `widgets`, `pages` and `providers`.
