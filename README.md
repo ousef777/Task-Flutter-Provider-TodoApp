@@ -37,7 +37,7 @@ flutter pub add provider
 9. In your `provider` folder, create a file named `todo_provider.dart`.
 10. In your `todo_provider.dart` import the material package and your `Todo` model.
 11. Create your provider that extends `ChangeNotifier`.
-12. Create you `todos` list and initilaize it with one `Todo` object to help us with testing our code.
+12. Create you `todos` list and initialize it with one `Todo` object to help us with testing our code.
 
 ```dart
   var todos = [
