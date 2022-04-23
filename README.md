@@ -7,7 +7,7 @@
 
 The [Checkbox](https://api.flutter.dev/flutter/material/Checkbox-class.html) widget.
 
-## Instructions
+## 🍋 Instructions
 
 1. Create a new project called: `todo_app`.
 2. Create the structure of your folders: `models`, `widgets`, `pages` and `providers`.
