@@ -37,11 +37,7 @@ import 'package:provider/provider.dart';
 
 8. Import the `provider` package and our `TodoProvider` in `home_page.dart`.
 
-9. In your `SingleChildScrollView`. as child, add a `Consumer` widget that consumes our `TodoProvider`.
-
-10. This consumer widget, will take a builder property that takes three arguments, `context`, ourProvider, and a `child` and returns a widget.
-
-11. That widget should be a `ListView.builder` widget that returns a `TodoTile` and passing the `todo` object from our provider using the `index`.
+9. That widget should be a `ListView.builder` widget that returns a `TodoTile` and passing the `todo` object from our provider using the `index`.
 
 12. Save your code, and test your app, you should see the `todo` we added in the provider.
 
@@ -61,4 +57,3 @@ import 'package:provider/provider.dart';
 
 20. Don't forget to call `notifyListeners()`.
 
-21. Then, we will wrap our `Checkbox` widget with a `Consumer` widget, and within our `onChange` property, we'll call our provider and the method we just created and pass the `id` to it.
