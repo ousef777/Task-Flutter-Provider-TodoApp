@@ -47,13 +47,11 @@ import 'package:provider/provider.dart';
 
 15. Back to our `add_page.dart` button `onPressed` method, call our provider `addTodo` method, and pass it the the value of our `TextField` controller.
 
-16. Don't forget to set `listen` to `false` since we are not rebuilding this widget.
+16. Now we need to go back to our `home_page`, so use the `pop` method. Check you app to make sure todos are being added.
 
-17. Now we need to go back to our `home_page`, so use the `pop` method. Check you app to make sure todos are being added.
+17. The last thing to do is to change the `done` status of our todo using the `Checkbox` widget.
 
-18. The last thing to do is to change the `done` status of our todo using the `Checkbox` widget.
+18. First, we need to create a method for that in our `todo_provider.dart`, this method takes an `id` as an argument, and looks for the `todo` with the same `id` within our `todos` list, and switch it's `done` property value to `true` or `false`.
 
-19. First, we need to create a method for that in our `todo_provider.dart`, this method takes an `id` as an argument, and looks for the `todo` with the same `id` within our `todos` list, and switch it's `done` property value to `true` or `false`.
-
-20. Don't forget to call `notifyListeners()`.
+19. Don't forget to call `notifyListeners()`.
 
