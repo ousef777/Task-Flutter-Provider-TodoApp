@@ -8,7 +8,7 @@ The [Checkbox](https://api.flutter.dev/flutter/material/Checkbox-class.html) wid
 
 ## 🍋 Instructions
 
-Fork and clone [this](https://api.flutter.dev/flutter/material/Checkbox-class.html) into your development folder.
+Fork and clone [this](https://github.com/JoinCODED/Task-Flutter-Provider-TodoApp) into your development folder.
 
 1. Let's create our provider with the needed logic in it, install the `provider` package.
 
