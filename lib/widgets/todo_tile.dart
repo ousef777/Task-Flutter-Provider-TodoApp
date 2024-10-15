@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
 import 'package:todo_app/models/todo.dart';
+import 'package:todo_app/provider/todo_provider.dart';
 
 class TodoTile extends StatelessWidget {
   final Todo todo;
@@ -14,13 +15,15 @@ class TodoTile extends StatelessWidget {
         child: ListTile(
           title: Text(todo.title),
           trailing: Checkbox(
-            fillColor: MaterialStateProperty.all<Color>(Colors.white),
+            fillColor: WidgetStateProperty.all<Color>(Colors.white),
             checkColor: Colors.amber.shade300,
-            side: MaterialStateBorderSide.resolveWith(
+            side: WidgetStateBorderSide.resolveWith(
               (states) => BorderSide(width: 1.0, color: Colors.amber.shade300),
             ),
-            value: todo.done,
-            onChanged: (value) => {},
+            value: context.watch<TodoProvider>().todos.firstWhere((element) => element.id == todo.id).done,
+            onChanged: (value) {
+              Provider.of<TodoProvider>(context, listen: false).check(todo, value!);
+            },
           ),
         ),
       ),
